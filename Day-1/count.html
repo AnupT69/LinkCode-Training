@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction of </title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction of JS DOM Manipulation</title>
+  </head>
+  <body>
+    <h1>Basic JS DOM Manipulation</h1>
+    <button
+      onclick="incrementCount()"
+      style="background-color: green; color: black"
+    >
+      Count
+    </button>
+    <div id="count">1</div>
+    <script>
+      const countElement = document.getElementById("count");
+      let count = 0;
+      let interval;
+
+      function incrementCount() {
+        count++;
+        console.log(count);
+        countElement.innerText = count;
+
+        if (count % 2 == 0) {
+          countElement.style.backgroundColor = "green";
+        } else {
+          countElement.style.backgroundColor = "orange";
+        }
+      }
+    </script>
+  </body>
 </html>
