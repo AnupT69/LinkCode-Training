@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <div class="input-container">
+        <input type="text" id="todo-input" placeholder="Add new task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <div class="gen-request">
+      <h2>Do you want Step wise approach for your task?</h2>
+      <div class="input-container">
+        <input
+          type="text"
+          id="todo-step-input"
+          placeholder="Enter your task..."
+        />
+        <button onclick="generate()">Generate</button>
+      </div>
+      <ul id="generated-response"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.container {
+  background: whitesmoke;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  background: #28a745;
+  color: whitesmoke;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.gen-request {
+  background: whitesmoke;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container,
+.gen-request {
+  width: 90%;
+  max-width: 400px;
+}
+
+.input-container input {
+  width: 70%;
+}
+
+.gen-request input {
+  flex: 1;
+  padding: 8px;
+}
+
+.gen-request button {
+  background: #007bff;
+  color: whitesmoke;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.gen-request button:hover {
+  background: #0056b3;
+}
